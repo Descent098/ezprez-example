@@ -27,6 +27,7 @@ jobs:
       run: |
         mkdir ~/Downloads
         python example.py
+        ls
         mv "Welcome to this example Presentation/*" "."
         rm "Welcome to this example Presentation"
 
