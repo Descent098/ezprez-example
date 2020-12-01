@@ -33,10 +33,10 @@ nav = Navbar("ezprez Demo", [[SocialLinks.github,"https://github.com/Descent098/
 slide_10 = Slide("..and add navbars (move your mouse to the top)", Code("python", "from ezprez.core import Presentation\nfrom ezprez.components import Navbar, SocialLinks\nnav = Navbar('ezprez Demo', [[SocialLinks.github,'https://github.com/Descent098/ezprez'], [SocialLinks.youtube, 'https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw']])\nPresentation(title, description, slides, navbar=nav)"))
 
 # Why
-slide_11 = Slide("Why should I use this?", "The python source code for this presenation is 18 lines", "The html it produced is 251")
+slide_11 = Slide("Why should I use this?", "The python source code for this presenation is 18 lines", "The html it produced is 262")
 
 # Add all the slides to a list
-slides = [slide_1, slide_2,slide_3, slide_4, slide_5, slide_6, slide_7, slide_8, slide_9, slide_10]
+slides = [slide_1, slide_2,slide_3, slide_4, slide_5, slide_6, slide_7, slide_8, slide_9, slide_10, slide_11]
 
 # Setup the presentation
 prez = Presentation("Welcome to this example Presentation", "This will give you a taste of what ezprez can do, and how to use it", "https://kieranwood.ca/ezprez-example", slides, navbar=nav, footer=foot)
