@@ -27,11 +27,7 @@ jobs:
       run: |
         mkdir ~/Downloads
         python example.py
-        echo before move
-        ls
         mv Welcome\ to\ this\ example\ Presentation/* .
-        echo after move
-        ls
         rm -rf Welcome\ to\ this\ example\ Presentation
 
     - name: Deploy Docs
