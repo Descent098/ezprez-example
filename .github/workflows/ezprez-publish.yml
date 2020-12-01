@@ -25,6 +25,7 @@ jobs:
 
     - name: build html files
       run: |
+        mkdir ~/Downloads
         python example.py
         mv "Welcome to this example Presentation/*" "."
         rm "Welcome to this example Presentation"
