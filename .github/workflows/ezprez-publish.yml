@@ -27,8 +27,8 @@ jobs:
       run: |
         mkdir ~/Downloads
         python example.py
-        mv Welcome\ to\ this\ example\ Presentation/* .
-        rm -rf Welcome\ to\ this\ example\ Presentation
+        mv Presentation/* .
+        rm -rf Presentation
 
     - name: Deploy Docs
       uses: peaceiris/actions-gh-pages@v3
