@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- SEO -->
-        <title>Basic Web Technologies</title>
+        <title>Welcome to this example Presentation</title>
         <meta name="description" content="This will give you a taste of what ezprez can do, and how to use it">
 
         <!-- URL CANONICAL -->
@@ -27,7 +27,7 @@
         <meta property="og:type" content="article">
         <meta property="og:title" content="Welcome to this example Presentation"> 
         <meta property="og:description" content="This will give you a taste of what ezprez can do, and how to use it">
-        <meta property="og:updated_time" content="2020-12-01 01:55:34.545720">
+        <meta property="og:updated_time" content="2020-12-06 20:11:13.002825">
         <meta property="og:image" content="static/images/share-webslides.jpg">
 
         <!-- TWITTER -->
@@ -55,13 +55,17 @@
                 <p class="logo"><a href="" target="_blank" title="ezprez Demo">ezprez Demo</a></p>
                 <ul>
         
-					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external'>
-                        <i class='fab fa-github fa-3x'></i>
-                    </a>
+					<li>
+					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
+                                    <i class='fab fa-github fa-3x'></i>
+                                </a>
+</li>
 
-					<a href='https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw' target='_blank' rel='external'>
-                        <i class='fab fa-youtube fa-3x'></i>
-                    </a>
+					<li>
+					<a href='https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
+                                    <i class='fab fa-youtube fa-3x'></i>
+                                </a>
+</li>
 
                 </ul>
             </nav>
@@ -78,12 +82,12 @@
                     </div>
             </section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>First get ezprez installed</h2>
 					<p>windows</p>
-					<pre><code class='language-shell'>> pip install ezprez</code></pre>
+					<pre><code class='language-shell'>&ampgt pip install ezprez</code></pre>
 					<p>mac/linux</p>
 					<pre><code class='language-shell'>$ sudo pip3 install ezprez</code></pre>
 					<p>or add it to your python project</p>
@@ -98,7 +102,93 @@ install_requires=['ezprez']
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>Then setup the boilerplate</h2>
+					<p>Here's your hello world!</p>
+					<pre><code class='language-python'>from ezprez.core import Slide, Presentation
+from ezprez.components import *
+
+Slide('Hello World!', 'Welcome to ezprez')
+prez = Presentation('Hello world presentation', 'This is the most basic presenation', 'https://example.com/url')
+prez.export('.', force=True)</code></pre>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>Table of contents</h2>
+
+		<hr>
+		<div class='toc'>
+			<ol>
+				<li>
+					<a href='#slide=2' title='Go to Setup'>
+					<span class='chapter'>Setup</span>
+					<span class='toc-page'>2</span>
+				</a></li>
+				<li>
+					<a href='#slide=6' title='Go to Links'>
+					<span class='chapter'>Links</span>
+					<span class='toc-page'>6</span>
+				</a></li>
+				<li>
+					<a href='#slide=7' title='Go to Lists'>
+					<span class='chapter'>Lists</span>
+					<span class='toc-page'>7</span>
+				</a></li>
+				<li>
+					<a href='#slide=8' title='Go to Alignment'>
+					<span class='chapter'>Alignment</span>
+					<span class='toc-page'>8</span>
+				</a></li>
+				<li>
+					<a href='#slide=11' title='Go to Colors'>
+					<span class='chapter'>Colors</span>
+					<span class='toc-page'>11</span>
+				</a></li>
+				<li>
+					<a href='#slide=13' title='Go to Footers'>
+					<span class='chapter'>Footers</span>
+					<span class='toc-page'>13</span>
+				</a></li>
+				<li>
+					<a href='#slide=14' title='Go to Navbars'>
+					<span class='chapter'>Navbars</span>
+					<span class='toc-page'>14</span>
+				</a></li>
+				<li>
+					<a href='#slide=15' title='Go to Icons'>
+					<span class='chapter'>Icons</span>
+					<span class='toc-page'>15</span>
+				</a></li>
+				<li>
+					<a href='#slide=16' title='Go to Buttons'>
+					<span class='chapter'>Buttons</span>
+					<span class='toc-page'>16</span>
+				</a></li>
+				<li>
+					<a href='#slide=17' title='Go to Videos'>
+					<span class='chapter'>Videos</span>
+					<span class='toc-page'>17</span>
+				</a></li>
+				<li>
+					<a href='#slide=18' title='Go to Raw HTML'>
+					<span class='chapter'>Raw HTML</span>
+					<span class='toc-page'>18</span>
+				</a></li>
+			</ol>
+		</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>This is the most basic slide...</h2>
@@ -108,7 +198,7 @@ install_requires=['ezprez']
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>You can also add links</h2>
@@ -120,7 +210,7 @@ install_requires=['ezprez']
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>A bit fancier</h2>
@@ -137,7 +227,7 @@ install_requires=['ezprez']
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-left'>
 					<h2>We can also re-align content horizontally...</h2>
@@ -148,7 +238,7 @@ Slide(heading, *contents, horizontal_alignment='left')</code></pre>
 				</div>
 			</section>
 
-			<section class='bg-False slide-top'>
+			<section class='bg-white slide-top'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>...and vertically</h2>
@@ -159,7 +249,7 @@ Slide(heading, *contents, vertical_alignment='top')</code></pre>
 				</div>
 			</section>
 
-			<section class='bg-False slide-bottom'>
+			<section class='bg-white slide-bottom'>
 				<div class='wrap'>
 					<div class='content-right'>
 					<h2>Porque no los dos</h2>
@@ -183,7 +273,20 @@ Slide(heading, *contents, background='black')</code></pre>
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>You can also set a default background color for the whole presentation</h2>
+					<pre><code class='language-python'>from ezprez.core import Presentation
+from ezprez.components import *
+
+Presentation(title, description, url, background=color)</code></pre>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>You can add footers (like in the bottom left)...</h2>
@@ -196,7 +299,7 @@ Presentation(title, description, slides, footer=foot)</code></pre>
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>..and add navbars (move your mouse to the top)</h2>
@@ -209,12 +312,64 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 				</div>
 			</section>
 
-			<section class='bg-False slide-center'>
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>ezprez</h2>
+					<svg class='fa-heart' style='width:15px;height:15px;'><use xlink:href='#fa-heart'></use></svg>
+
+					<a href=https://fontawesome.com target='_blank' rel='external'>'s icons...</a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>And buttons..</h2>
+
+			<a href='#' class='button radius' > Like this </a>
+
+			<a href='#' class='button radius' style="background-color:#141414;"> Or different colors </a>
+
+			<a href='#' class='button radius' >					<svg class='fa-heart' style='width:15px;height:15px;'><use xlink:href='#fa-heart'></use></svg>
+ Or one's with icons </a>
+
+			<a href='#' class='button ghost' > or Ghost style, and without rounding </a>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>Even youtube videos work</h2>
+
+				<div class='embed'>
+					<iframe src='https://www.youtube.com/embed/wSVljLh1VmI' frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+				</div> 
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap'>
+					<div class='content-center'>
+					<h2>And in those sticky situations, you can add raw html</h2>
+<h3><strong><em>Like this</em></strong></h3>
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
 				<div class='wrap'>
 					<div class='content-center'>
 					<h2>Why should I use this?</h2>
-					<p>The python source code for this presenation is 18 lines</p>
-					<p>The html it produced is 262</p>
+					<p>The python source code for this presenation is 25 lines</p>
+					<p>The html it produced is 418 lines</p>
+					<svg class='fa-thumbs-up' style='width:48px;height:48px;'><use xlink:href='#fa-thumbs-up'></use></svg>
 
 					</div>
 				</div>
@@ -222,7 +377,7 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 
 			<section class='bg-white'>
                     <div class='wrap aligncenter'>
-                        <h2><strong>Thank you for listening</strong></h2>
+                        <h2><strong>Thank you</strong></h2>
                         <h4 class='text-intro'>This presentation was made with the help of</h4>
                         <h4>
                             <strong><em><a href='https://webslides.tv' target='_blank'>WebSlides</a></em></strong> 
@@ -251,9 +406,11 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
     
         <footer>
         
-					<a href='https://github.com/Descent098/ezprez-example' target='_blank' rel='external'>
-                        <i class='fab fa-github fa-3x'></i>
-                    </a>
+			
+					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
+                                    <i class='fab fa-github fa-3x'></i>
+                                </a>
+
 
         </footer>
 
