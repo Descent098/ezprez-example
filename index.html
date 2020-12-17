@@ -27,17 +27,17 @@
         <meta property="og:type" content="article">
         <meta property="og:title" content="Welcome to this example Presentation"> 
         <meta property="og:description" content="This will give you a taste of what ezprez can do, and how to use it">
-        <meta property="og:updated_time" content="2020-12-06 20:11:13.002825">
-        <meta property="og:image" content="static/images/share-webslides.jpg">
+        <meta property="og:updated_time" content="2020-12-17 06:29:49.572250">
+        <meta property="og:image" content="Image(title='low poly ice caps', filename='kieran-wood-lp-ice-caps-4k-w-peng.jpg', browser=False, width=False, height=False)">
 
         <!-- TWITTER -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Welcome to this example Presentation"> 
         <meta name="twitter:description" content="This will give you a taste of what ezprez can do, and how to use it"> 
-        <meta name="twitter:image" content="static/images/share-webslides.jpg">
+        <meta name="twitter:image" content="Image(title='low poly ice caps', filename='kieran-wood-lp-ice-caps-4k-w-peng.jpg', browser=False, width=False, height=False)">
 
         <!-- FAVICONS -->
-            <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-152.png">
+            <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/logo.ico">
 
         <!-- Android -->
         <meta name="mobile-web-app-capable" content="yes">
@@ -57,14 +57,14 @@
         
 					<li>
 					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
-                                    <i class='fab fa-github fa-3x'></i>
-                                </a>
+                                <i class='fab fa-github fa-3x'></i>
+                            </a>
 </li>
 
 					<li>
 					<a href='https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
-                                    <i class='fab fa-youtube fa-3x'></i>
-                                </a>
+                                <i class='fab fa-youtube fa-3x'></i>
+                            </a>
 </li>
 
                 </ul>
@@ -76,6 +76,7 @@
     <main role='main'>
         <article id='webslides' >
 			<section class='bg-white'>
+                <span class='background' style='background-image:url("./static/images/kieran-wood-lp-ice-caps-4k-w-peng.jpg")'></span>
                     <div class='wrap aligncenter'>
                         <h1><strong>Welcome to this example Presentation</strong></h1>
                         <p class='text-intro'>This will give you a taste of what ezprez can do, and how to use it</p>
@@ -83,7 +84,7 @@
             </section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>First get ezprez installed</h2>
 					<p>windows</p>
@@ -103,7 +104,7 @@ install_requires=['ezprez']
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Then setup the boilerplate</h2>
 					<p>Here's your hello world!</p>
@@ -119,7 +120,7 @@ prez.export('.', force=True)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Table of contents</h2>
 
@@ -177,9 +178,24 @@ prez.export('.', force=True)</code></pre>
 					<span class='toc-page'>17</span>
 				</a></li>
 				<li>
-					<a href='#slide=18' title='Go to Raw HTML'>
-					<span class='chapter'>Raw HTML</span>
+					<a href='#slide=18' title='Go to Images'>
+					<span class='chapter'>Images</span>
 					<span class='toc-page'>18</span>
+				</a></li>
+				<li>
+					<a href='#slide=20' title='Go to Raw HTML'>
+					<span class='chapter'>Raw HTML</span>
+					<span class='toc-page'>20</span>
+				</a></li>
+				<li>
+					<a href='#slide=21' title='Go to Grids'>
+					<span class='chapter'>Grids</span>
+					<span class='toc-page'>21</span>
+				</a></li>
+				<li>
+					<a href='#slide=23' title='Go to Animation'>
+					<span class='chapter'>Animation</span>
+					<span class='toc-page'>23</span>
 				</a></li>
 			</ol>
 		</div>
@@ -189,7 +205,7 @@ prez.export('.', force=True)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>This is the most basic slide...</h2>
 					<p>It's just text nothing more</p>
@@ -199,19 +215,19 @@ prez.export('.', force=True)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>You can also add links</h2>
 					<p>Like this one</p>
 
-					<a href=https://kieranwood.ca target='_blank' rel='external'>to my website</a>
+					<a href=https://kieranwood.ca target='_blank' rel='external' style='color:#4dd;'>to my website</a>
 
 					</div>
 				</div>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>A bit fancier</h2>
 					<p>We can also do lists for any longer content needed</p>
@@ -228,7 +244,7 @@ prez.export('.', force=True)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-left'>
 					<h2>We can also re-align content horizontally...</h2>
 					<pre><code class='language-python'>from ezprez.core import Slide
@@ -239,7 +255,7 @@ Slide(heading, *contents, horizontal_alignment='left')</code></pre>
 			</section>
 
 			<section class='bg-white slide-top'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>...and vertically</h2>
 					<pre><code class='language-python'>from ezprez.core import Slide
@@ -250,7 +266,7 @@ Slide(heading, *contents, vertical_alignment='top')</code></pre>
 			</section>
 
 			<section class='bg-white slide-bottom'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-right'>
 					<h2>Porque no los dos</h2>
 					<pre><code class='language-python'>from ezprez.core import Slide
@@ -261,11 +277,11 @@ Slide(heading, *contents, horizontal_alignment='right', vertical_alignment='bott
 			</section>
 
 			<section class='bg-black slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>You can also change the background color</h2>
 
-					<a href=https://webslides.tv/demos/components#slide=27 target='_blank' rel='external'>Here are the available colors (on those slides it says 'bg-color', just use 'color' i.e. 'bg-black' becomes 'black')</a>
+					<a href=https://webslides.tv/demos/components#slide=27 target='_blank' rel='external' style='color:#4dd;'>Here are the available colors (on those slides it says 'bg-color', just use 'color' i.e. 'bg-black' becomes 'black')</a>
 					<pre><code class='language-python'>from ezprez.core import Slide
 Slide(heading, *contents, background='black')</code></pre>
 
@@ -274,7 +290,7 @@ Slide(heading, *contents, background='black')</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>You can also set a default background color for the whole presentation</h2>
 					<pre><code class='language-python'>from ezprez.core import Presentation
@@ -287,7 +303,7 @@ Presentation(title, description, url, background=color)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>You can add footers (like in the bottom left)...</h2>
 					<pre><code class='language-python'>from ezprez.core import Presentation
@@ -300,7 +316,7 @@ Presentation(title, description, slides, footer=foot)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>..and add navbars (move your mouse to the top)</h2>
 					<pre><code class='language-python'>from ezprez.core import Presentation
@@ -313,19 +329,19 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>ezprez</h2>
-					<svg class='fa-heart' style='width:15px;height:15px;'><use xlink:href='#fa-heart'></use></svg>
+					<svg class='fa-heart' style='width:15px;height:15px;color:red;'><use xlink:href='#fa-heart'></use></svg>
 
-					<a href=https://fontawesome.com target='_blank' rel='external'>'s icons...</a>
+					<a href=https://fontawesome.com target='_blank' rel='external' style='color:#4dd;'>'s icons...</a>
 
 					</div>
 				</div>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>And buttons..</h2>
 
@@ -333,7 +349,7 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 
 			<a href='#' class='button radius' style="background-color:#141414;"> Or different colors </a>
 
-			<a href='#' class='button radius' >					<svg class='fa-heart' style='width:15px;height:15px;'><use xlink:href='#fa-heart'></use></svg>
+			<a href='#' class='button radius' >					<svg class='fa-heart' style='width:15px;height:15px;color:#141414;'><use xlink:href='#fa-heart'></use></svg>
  Or one's with icons </a>
 
 			<a href='#' class='button ghost' > or Ghost style, and without rounding </a>
@@ -343,7 +359,7 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Even youtube videos work</h2>
 
@@ -355,7 +371,26 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>This is an image</h2>
+<img src='./static/images/kieran-wood-lp-ice-caps-4k-w-peng.jpg' alt='low poly ice caps' >
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-black slide-center'>
+				<span class='background' style='background-image:url("./static/images/kieran-wood-abstract-landscape.jpg")'></span>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>This is a background image</h2>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>And in those sticky situations, you can add raw html</h2>
 <h3><strong><em>Like this</em></strong></h3>
@@ -364,12 +399,74 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
 			</section>
 
 			<section class='bg-white slide-center'>
-				<div class='wrap'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>You can also have grids</h2>
+
+				<div class='grid'>
+					<div class='column'><p>With</p></div>
+
+					<div class='column'><p>Lots</p></div>
+
+					<div class='column'><p>of</p></div>
+
+					<div class='column'><p>content</p></div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap fadeIn'>
+					<div class='content-center'>
+					<h2>Like, alot of content...</h2>
+
+				<div class='grid'>
+					<div class='column'>
+					<p>You can stack content within grids</p>
+
+					<ul>
+					<li>like this</li>
+
+					<li>and this</li>
+
+					<li>and even this</li>
+
+					</ul>
+					</div>
+					<div class='column'>
+					<p>This is getting too much now</p>
+
+					<ul>
+					<li>way</li>
+
+					<li>way way</li>
+
+					<li>too much</li>
+
+					</ul>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap zoomIn slow'>
+					<div class='content-center'>
+					<h2>You can also change the animation</h2>
+					<p>Like this one (which is 'zoomIn slow')</p>
+
+					</div>
+				</div>
+			</section>
+
+			<section class='bg-white slide-center'>
+				<div class='wrap fadeIn'>
 					<div class='content-center'>
 					<h2>Why should I use this?</h2>
-					<p>The python source code for this presenation is 25 lines</p>
-					<p>The html it produced is 418 lines</p>
-					<svg class='fa-thumbs-up' style='width:48px;height:48px;'><use xlink:href='#fa-thumbs-up'></use></svg>
+					<p>The python source code for this presenation is 30 lines</p>
+					<p>The html it produced is 511 lines</p>
+					<svg class='fa-thumbs-up' style='width:48px;height:48px;color:#2793e6;'><use xlink:href='#fa-thumbs-up'></use></svg>
 
 					</div>
 				</div>
@@ -407,9 +504,9 @@ Presentation(title, description, slides, navbar=nav)</code></pre>
         <footer>
         
 			
-					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external' style='background-color:#fff; color:#141414;'>
-                                    <i class='fab fa-github fa-3x'></i>
-                                </a>
+					<a href='https://github.com/Descent098/ezprez' target='_blank' rel='external' style='color:#141414;'>
+                                <i class='fab fa-github fa-3x'></i>
+                            </a>
 
 
         </footer>
