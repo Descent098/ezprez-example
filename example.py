@@ -8,7 +8,7 @@ Slide("First get ezprez installed", "windows", Code("shell", "> pip install ezpr
 Slide("Then setup the boilerplate", "Here's your hello world!", Code("python", "from ezprez.core import Slide, Presentation\nfrom ezprez.components import *\n\nSlide('Hello World!', 'Welcome to ezprez')\nprez = Presentation('Hello world presentation', 'This is the most basic presenation', 'https://example.com/url')\nprez.export('.', force=True)"))
 
 # Table of contents
-sections = {"Setup":2, "Links":6, "Lists":7, "Alignment":8, "Colors":11, "Footers":13, "Navbars":14, "Icons":15, "Buttons": 16, "Videos": 17, "Raw HTML":18}
+sections = {"Setup":2, "Links":6, "Lists":7, "Alignment":8, "Colors":11, "Footers":13, "Navbars":14, "Icons":15, "Buttons": 16, "Videos": 17, "Images":18, "Raw HTML": 20, "Grids": 21, "Animation": 23}
 Slide("Table of contents", TableOfContents(sections))
 
 # Basic text slide
@@ -38,7 +38,7 @@ nav = Navbar("ezprez Demo", [SocialLink.github.link("https://github.com/Descent0
 Slide("..and add navbars (move your mouse to the top)", Code("python", "from ezprez.core import Presentation\nfrom ezprez.components import Navbar, SocialLinks\nnav = Navbar('ezprez Demo', [[SocialLinks.github,'https://github.com/Descent098/ezprez'], [SocialLinks.youtube, 'https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw']])\nPresentation(title, description, slides, navbar=nav)"))
 
 # Icons
-Slide("ezprez", Icon("fa-heart", size="15px"), Link("'s icons...", "https://fontawesome.com"))
+Slide("ezprez", Icon("fa-heart", size="15px", color="red"), Link("'s icons...", "https://fontawesome.com"))
 
 # buttons
 Slide("And buttons..", Button("Like this", "#"), Button("Or different colors", "#", color="#141414"), Button("Or one's with icons", "#", icon=Icon("fa-heart", size="15px")), Button("or Ghost style, and without rounding", "#", ghost=True, rounding=False))
@@ -46,14 +46,25 @@ Slide("And buttons..", Button("Like this", "#"), Button("Or different colors", "
 # Videos
 Slide("Even youtube videos work", Video("wSVljLh1VmI"))
 
+# Images
+Slide("This is an image", Image("low poly ice caps", "kieran-wood-lp-ice-caps-4k-w-peng.jpg"))
+Slide("This is a background image", image=Image("low poly ice caps", "kieran-wood-abstract-landscape.jpg"), background="black") # using background='black' to have white text
+
 # Raw
 Slide("And in those sticky situations, you can add raw html", Raw("<h3><strong><em>Like this</em></strong></h3>"))
 
+# Grid
+Slide("You can also have grids", Grid("With", "Lots", "of", "content"))
+Slide("Like, alot of content...", Grid(["You can stack content within grids", ["like this", "and this", "and even this"]], ["This is getting too much now", ["way", "way way", "too much"]]))
+
+# Animations
+Slide("You can also change the animation", "Like this one (which is 'zoomIn slow')", animation="zoomIn slow")
+
 # Why
-Slide("Why should I use this?", "The python source code for this presenation is 25 lines", "The html it produced is 418 lines", Icon("fa-thumbs-up"))
+Slide("Why should I use this?", "The python source code for this presenation is 30 lines", "The html it produced is 511 lines", Icon("fa-thumbs-up", color="#2793e6"))
 
 # Setup the presentation
-prez = Presentation("Welcome to this example Presentation", "This will give you a taste of what ezprez can do, and how to use it", "https://kieranwood.ca/ezprez-example", navbar=nav, footer=foot)
+prez = Presentation("Welcome to this example Presentation", "This will give you a taste of what ezprez can do, and how to use it", "https://kieranwood.ca/ezprez-example", navbar=nav, footer=foot, image=Image("low poly ice caps", "kieran-wood-lp-ice-caps-4k-w-peng.jpg"), favicon=Image("favicon", "logo.ico"))
 
 # Export the files to the current directory at /Presentation
 prez.export(".", force=True, folder_name="Presentation")
