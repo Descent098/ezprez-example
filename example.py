@@ -30,11 +30,11 @@ Slide("You can also change the background color", Link("Here are the available c
 Slide("You can also set a default background color for the whole presentation", Code("python", "from ezprez.core import Presentation\nfrom ezprez.components import *\n\nPresentation(title, description, url, background=color)"))
 
 # Footers
-foot = Footer([SocialLink.github.link("https://github.com/Descent098/ezprez-example")])
+foot = Footer([SocialLink("github", "https://github.com/Descent098/ezprez-example")])
 Slide("You can add footers (like in the bottom left)...", Code("python", "from ezprez.core import Presentation\nfrom ezprez.components import Footer, SocialLinks\nfoot = Footer([[SocialLinks.github,'https://github.com/Descent098/ezprez-example']])\nPresentation(title, description, slides, footer=foot)"))
 
 # Navigation
-nav = Navbar("ezprez Demo", [SocialLink.github.link("https://github.com/Descent098/ezprez"), SocialLink.youtube.link("https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw")])
+nav = Navbar("ezprez Demo", [SocialLink("github", "https://github.com/Descent098/ezprez"), SocialLink("youtube", url = "https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw")])
 Slide("..and add navbars (move your mouse to the top)", Code("python", "from ezprez.core import Presentation\nfrom ezprez.components import Navbar, SocialLinks\nnav = Navbar('ezprez Demo', [[SocialLinks.github,'https://github.com/Descent098/ezprez'], [SocialLinks.youtube, 'https://www.youtube.com/channel/UC1-WbwQ1sAVZ3AVmrXcBwGw']])\nPresentation(title, description, slides, navbar=nav)"))
 
 # Icons
